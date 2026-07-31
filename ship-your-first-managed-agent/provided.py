@@ -10,7 +10,7 @@ from pathlib import Path
 
 import streamlit as st
 
-DATA = Path("data")
+DATA = Path(__file__).parent / "data"
 
 SYSTEM = """\
 You are the SRE Agent — an SRE/data-analyst agent embedded in an incident
